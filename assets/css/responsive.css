@@ -1,0 +1,71 @@
+@media only screen and (max-width: 1315px) {
+  .cardsContent-gridWrapper {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .mainFooterContainer {
+    flex-direction: column;
+  }
+  .footerSectionContainer {
+    margin-top: 3em;
+    gap: 1.2em;
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  .pageBanner {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1052px) {
+  .cardsContent-gridWrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .navigationLeftSection {
+    display: none;
+  }
+  nav {
+    justify-content: flex-end !important;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .recommendedButton {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 876px) {
+  .cardsContent-gridWrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 670px) {
+  .searchBar {
+    flex-direction: column;
+  }
+  .filterButtonWrapper {
+    width: 100%;
+  }
+  .filterButton {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .searchButton {
+    display: none;
+  }
+  .searchFormWrapper {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .cardsContent-gridWrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

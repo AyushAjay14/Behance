@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML + CSS</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/responsive.css">
+  </head>
+  <body>
+   <header role="banner">
+    <nav role="navigation" aria-label="Table of Content" class="flex-between">
+      <div class="navigationLeftSection flex-center">
+        <img
+          aria-label="Behance Logo"
+          class="behanceLogo"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Behance_logo.svg/1280px-Behance_logo.svg.png"
+          alt="Behance Logo"
+        />
+        <div class="coreNavigationItemsWrapper">
+          <ul class="coreNavigationItems">
+            <li class="flex-center">
+              <p>Explore</p>
+            </li>
+            <li class="flex-center">
+              <p>Assets</p>
+            </li>
+            <li class="flex-center">
+              <p>Jobs</p>
+            </li>
+            <li class="flex-center">
+              <p>Behance</p>
+            </li>
+          </ul>
+        </div>
+        <div class="coreNavigationNestedItem flex-center">
+          <p>Hire Freelancers</p>
+          <i class="bx bx-chevron-down"></i>
+        </div>
+      </div>
+      <div class="navigationRightSection flex-center">
+        <i class="bx bxs-bell bx-sm"></i>
+        <button aria-label="Login Button" class="btn loginButton ease-in">Log In</button>
+        <button aria-label="SignUp Button" class="btn signupButton ease-in">Sign Up</button>
+        <img
+          aria-label="Adobe Logo"
+          class="adobeLogo"
+          src="https://cdn.iconscout.com/icon/free/png-256/adobe-254-761738.png"
+          alt="Adobe Logo"
+        />
+      </div>
+    </nav>
+  </header>
+
+    <!-- pageBanner -->
+    <main role="main content">
+      <section class="pageBanner flex-center">
+        <div class="flex-center">
+          <div class="imgGridWrapper">
+          <img src="https://www.behance.net/ui/img/creator_pro/page_banner/1.webp" class="leftGridImg" alt="">
+          <img src="https://www.behance.net/ui/img/creator_pro/page_banner/2.webp" class="leftGridImg" alt="">
+          <img src="https://www.behance.net/ui/img/creator_pro/page_banner/3.webp" class="leftGridImg" alt="">
+          <img src="https://www.behance.net/ui/img/creator_pro/page_banner/4.webp" class="leftGridImg" alt="">
+          <img src="https://www.behance.net/ui/img/creator_pro/page_banner/5.webp" class="leftGridImg" alt="">
+          <img src="https://www.behance.net/ui/img/creator_pro/page_banner/6.webp" class="leftGridImg" alt="">
+            </div>
+        </div>
+        <div class="pageBannerMidSection flex-center">
+          <h1 class="pageBannerHeader text-center">
+            The World's
+          </br>
+            <span>Best Creators</span>
+        </br>
+            Are On Behance
+          </h1>
+          <p class="pageBanner-subHeader text-center">A comprehensive platform to help hirers and creators navigate the creative world from discovering inspiration, to connecting with one another</p>
+          <div class="buttonWrapper flex-center">
+              <button class="btn buttonPrimary ease-in text-center">Hire a Freelancer</button>
+              <button class="btn buttonTertiary ease-in text-center">Try Behance Pro</button>
+          </div>
+        </div>
+        <div class="flex-center">
+          <div class="imgGridWrapper"> 
+            <img src="https://www.behance.net/ui/img/creator_pro/page_banner/7.webp" class="rightGridImg" alt="">
+            <img src="https://www.behance.net/ui/img/creator_pro/page_banner/8.webp" class="rightGridImg" alt="">
+            <img src="https://www.behance.net/ui/img/creator_pro/page_banner/9.webp" class="rightGridImg" alt="">
+            <img src="https://www.behance.net/ui/img/creator_pro/page_banner/10.webp" class="rightGridImg" alt="">
+            <img src="https://www.behance.net/ui/img/creator_pro/page_banner/11.webp" class="rightGridImg" alt="">
+           </div>
+        </div>
+      </section>
+  
+      <!-- SearchBar and Suggestions Section -->
+  
+      <section class="searchBar flex-center" role="Search Bar and Sorting">
+        <div class="filterButtonWrapper">
+          <button class="btn filterButton flex-center"> <img src="/assets/svg/filter.svg" alt=""> Filter</button>
+        </div>
+         <div class="searchFormWrapper flex-center">
+           <i class='bx bx-search-alt-2 bx-sm searchIcon'></i>
+           <form action="">
+             <label for="search"></label>
+             <input type="search" name="search" placeholder="Search the creative world at work" aria-label="Search Behance">
+           </form>
+           <button class="btn searchButton ease-in flex-center">  <i class='bx bx-image bx-sm searchImageIcon'></i> Search by image</button>
+         </div>
+         <button aria-label="Recommended Button" class="btn recommendedButton">Recommended</button>
+      </section>
+  
+      <!-- cardsContent Section -->
+  
+      <section role="Cards Section" class="cardsContent-gridWrapper">
+        <div class="cardBox">
+          <div class="upper-card">
+            <img src="https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/b3c6bf203576623.Y3JvcCwzODQwLDMwMDMsMCw0MTg.jpg" loading="lazy" alt="">
+            <div
+              class="overlay-box"
+              role="dialog"
+              aria-labelledby="overlayLabel"
+            >
+              <div class="overlay-content">
+                <button class="btn saveButton"><i class='bx bxs-folder-open folderIcon' ></i>Save</button>
+              </div>
+            </div>
+          </div>
+          <div class="projectCover-details">
+            <div class="text">
+              <div class="titleOwner">
+                Arxiu Perenne | Visual Identity
+              </div>
+              <div class="subHeading">Multiple Owners</div>
+            </div>
+            <div class="projectCover-stats">
+              <div class="likes">
+                <i class='bx bxs-like'></i>
+                <span>505</span>
+              </div>
+              <div class="views">
+                <i class='bx bxs-movie'></i>
+                <span>2.3k</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cardBox">
+          <div class="upper-card">
+            <img src="https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/5246bc195320847.Y3JvcCwxNjE2LDEyNjQsMCww.png" loading="lazy" alt="">
+            <div
+              class="overlay-box"
+              role="dialog"
+              aria-labelledby="overlayLabel"
+            >
+              <div class="overlay-content">
+                <button class="btn saveButton"><i class='bx bxs-folder-open folderIcon' ></i>Save</button>
+              </div>
+            </div>
+          </div>
+          <div class="projectCover-details">
+            <div class="text">
+              <div class="titleOwner">
+                Arxiu Perenne | Visual Identity
+              </div>
+              <div class="subHeading">Multiple Owners</div>
+            </div>
+            <div class="projectCover-stats">
+              <div class="likes">
+                <i class='bx bxs-like'></i>
+                <span>505</span>
+              </div>
+              <div class="views">
+                <i class='bx bxs-movie'></i>
+                <span>2.3k</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cardBox">
+          <div class="upper-card">
+            <img src="https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/a3dc88205346349.Y3JvcCwyODg2LDIyNTgsMjU3LDA.jpg" loading="lazy" alt="">
+            <div
+              class="overlay-box"
+              role="dialog"
+              aria-labelledby="overlayLabel"
+            >
+              <div class="overlay-content">
+                <button class="btn saveButton"><i class='bx bxs-folder-open folderIcon' ></i>Save</button>
+              </div>
+            </div>
+          </div>
+          <div class="projectCover-details">
+            <div class="text">
+              <div class="titleOwner">
+                Arxiu Perenne | Visual Identity
+              </div>
+              <div class="subHeading">Multiple Owners</div>
+            </div>
+            <div class="projectCover-stats">
+              <div class="likes">
+                <i class='bx bxs-like'></i>
+                <span>505</span>
+              </div>
+              <div class="views">
+                <i class='bx bxs-movie'></i>
+                <span>2.3k</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cardBox">
+          <div class="upper-card">
+            <img src="https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/9f89cc170016755.Y3JvcCw4MDgsNjMyLDAsMA.jpg" loading="lazy" alt="">
+            <div
+              class="overlay-box"
+              role="dialog"
+              aria-labelledby="overlayLabel"
+            >
+              <div class="overlay-content">
+                <button class="btn saveButton"><i class='bx bxs-folder-open folderIcon' ></i>Save</button>
+              </div>
+            </div>
+          </div>
+          <div class="projectCover-details">
+            <div class="text">
+              <div class="titleOwner">
+                Arxiu Perenne | Visual Identity
+              </div>
+              <div class="subHeading">Multiple Owners</div>
+            </div>
+            <div class="projectCover-stats">
+              <div class="likes">
+                <i class='bx bxs-like'></i>
+                <span>505</span>
+              </div>
+              <div class="views">
+                <i class='bx bxs-movie'></i>
+                <span>2.3k</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cardBox">
+          <div class="upper-card">
+            <img src="https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/691262204060049.Y3JvcCw4MDgsNjMyLDAsMA.jpg" loading="lazy" alt="">
+            <div
+              class="overlay-box"
+              role="dialog"
+              aria-labelledby="overlayLabel"
+            >
+              <div class="overlay-content">
+                <button class="btn saveButton"><i class='bx bxs-folder-open folderIcon' ></i>Save</button>
+              </div>
+            </div>
+          </div>
+          <div class="projectCover-details">
+            <div class="text">
+              <div class="titleOwner">
+                Arxiu Perenne | Visual Identity
+              </div>
+              <div class="subHeading">Multiple Owners</div>
+            </div>
+            <div class="projectCover-stats">
+              <div class="likes">
+                <i class='bx bxs-like'></i>
+                <span>505</span>
+              </div>
+              <div class="views">
+                <i class='bx bxs-movie'></i>
+                <span>2.3k</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cardBox">
+          <div class="upper-card">
+            <img src="https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/4b72a4167635349.Y3JvcCw2MzQ5LDQ5NjYsNDg3LDM2MQ.png" loading="lazy" alt="">
+            <div
+              class="overlay-box"
+              role="dialog"
+              aria-labelledby="overlayLabel"
+            >
+              <div class="overlay-content">
+                <button class="btn saveButton"><i class='bx bxs-folder-open folderIcon' ></i>Save</button>
+              </div>
+            </div>
+          </div>
+          <div class="projectCover-details">
+            <div class="text">
+              <div class="titleOwner">
+                Arxiu Perenne | Visual Identity
+              </div>
+              <div class="subHeading">Multiple Owners</div>
+            </div>
+            <div class="projectCover-stats">
+              <div class="likes">
+                <i class='bx bxs-like'></i>
+                <span>505</span>
+              </div>
+              <div class="views">
+                <i class='bx bxs-movie'></i>
+                <span>2.3k</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cardBox">
+          <div class="upper-card">
+            <img src="https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/10e03a205342473.Y3JvcCw4NzQsNjg0LDE1OCww.png" loading="lazy" alt="">
+            <div
+              class="overlay-box"
+              role="dialog"
+              aria-labelledby="overlayLabel"
+            >
+              <div class="overlay-content">
+                <button class="btn saveButton"><i class='bx bxs-folder-open folderIcon' ></i>Save</button>
+              </div>
+            </div>
+          </div>
+          <div class="projectCover-details">
+            <div class="text">
+              <div class="titleOwner">
+                Arxiu Perenne | Visual Identity
+              </div>
+              <div class="subHeading">Multiple Owners</div>
+            </div>
+            <div class="projectCover-stats">
+              <div class="likes">
+                <i class='bx bxs-like'></i>
+                <span>505</span>
+              </div>
+              <div class="views">
+                <i class='bx bxs-movie'></i>
+                <span>2.3k</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cardBox">
+          <div class="upper-card">
+            <img src="https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/d5a6c4169292951.Y3JvcCwyMjUwLDE3NTksMCw1MA.jpg" loading="lazy" alt="">
+            <div
+              class="overlay-box"
+              role="dialog"
+              aria-labelledby="overlayLabel"
+            >
+              <div class="overlay-content">
+                <button class="btn saveButton"><i class='bx bxs-folder-open folderIcon' ></i>Save</button>
+              </div>
+            </div>
+          </div>
+          <div class="projectCover-details">
+            <div class="text">
+              <div class="titleOwner">
+                Arxiu Perenne | Visual Identity
+              </div>
+              <div class="subHeading">Multiple Owners</div>
+            </div>
+            <div class="projectCover-stats">
+              <div class="likes">
+                <i class='bx bxs-like'></i>
+                <span>505</span>
+              </div>
+              <div class="views">
+                <i class='bx bxs-movie'></i>
+                <span>2.3k</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cardBox">
+          <div class="upper-card">
+            <img src="https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/217e96202209077.Y3JvcCw4MDgsNjMyLDAsMA.png" loading="lazy" alt="">
+            <div
+              class="overlay-box"
+              role="dialog"
+              aria-labelledby="overlayLabel"
+            >
+              <div class="overlay-content">
+                <button class="btn saveButton"><i class='bx bxs-folder-open folderIcon' ></i>Save</button>
+              </div>
+            </div>
+          </div>
+          <div class="projectCover-details">
+            <div class="text">
+              <div class="titleOwner">
+                Arxiu Perenne | Visual Identity
+              </div>
+              <div class="subHeading">Multiple Owners</div>
+            </div>
+            <div class="projectCover-stats">
+              <div class="likes">
+                <i class='bx bxs-like'></i>
+                <span>505</span>
+              </div>
+              <div class="views">
+                <i class='bx bxs-movie'></i>
+                <span>2.3k</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cardBox">
+          <div class="upper-card">
+            <img src="https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/4006c7158871639.Y3JvcCwyNDI0LDE4OTYsMCww.png" loading="lazy" alt="">
+            <div
+              class="overlay-box"
+              role="dialog"
+              aria-labelledby="overlayLabel"
+            >
+              <div class="overlay-content">
+                <button class="btn saveButton"><i class='bx bxs-folder-open folderIcon' ></i>Save</button>
+              </div>
+            </div>
+          </div>
+          <div class="projectCover-details">
+            <div class="text">
+              <div class="titleOwner">
+                Arxiu Perenne | Visual Identity
+              </div>
+              <div class="subHeading">Multiple Owners</div>
+            </div>
+            <div class="projectCover-stats">
+              <div class="likes">
+                <i class='bx bxs-like'></i>
+                <span>505</span>
+              </div>
+              <div class="views">
+                <i class='bx bxs-movie'></i>
+                <span>2.3k</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cardBox">
+          <div class="upper-card">
+            <img src="https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/8e811f193669645.Y3JvcCwxMTkyLDkzMywxMjEsMA.jpg" loading="lazy" alt="">
+            <div
+              class="overlay-box"
+              role="dialog"
+              aria-labelledby="overlayLabel"
+            >
+              <div class="overlay-content">
+                <button class="btn saveButton"><i class='bx bxs-folder-open folderIcon' ></i>Save</button>
+              </div>
+            </div>
+          </div>
+          <div class="projectCover-details">
+            <div class="text">
+              <div class="titleOwner">
+                Arxiu Perenne | Visual Identity
+              </div>
+              <div class="subHeading">Multiple Owners</div>
+            </div>
+            <div class="projectCover-stats">
+              <div class="likes">
+                <i class='bx bxs-like'></i>
+                <span>505</span>
+              </div>
+              <div class="views">
+                <i class='bx bxs-movie'></i>
+                <span>2.3k</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cardBox">
+          <div class="upper-card">
+            <img src="https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/0774ff155732039.Y3JvcCwzNzgzLDI5NTksMzI3LDA.jpg" loading="lazy" alt="">
+            <div
+              class="overlay-box"
+              role="dialog"
+              aria-labelledby="overlayLabel"
+            >
+              <div class="overlay-content">
+                <button class="btn saveButton"><i class='bx bxs-folder-open folderIcon' ></i>Save</button>
+              </div>
+            </div>
+          </div>
+          <div class="projectCover-details">
+            <div class="text">
+              <div class="titleOwner">
+                Arxiu Perenne | Visual Identity
+              </div>
+              <div class="subHeading">Multiple Owners</div>
+            </div>
+            <div class="projectCover-stats">
+              <div class="likes">
+                <i class='bx bxs-like'></i>
+                <span>505</span>
+              </div>
+              <div class="views">
+                <i class='bx bxs-movie'></i>
+                <span>2.3k</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cardBox">
+          <div class="upper-card">
+            <img src="https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/3ee6b7205114555.Y3JvcCwxNTY2LDEyMjUsMzA2LDM.jpg" loading="lazy" alt="">
+            <div
+              class="overlay-box"
+              role="dialog"
+              aria-labelledby="overlayLabel"
+            >
+              <div class="overlay-content">
+                <button class="btn saveButton"><i class='bx bxs-folder-open folderIcon' ></i>Save</button>
+              </div>
+            </div>
+          </div>
+          <div class="projectCover-details">
+            <div class="text">
+              <div class="titleOwner">
+                Arxiu Perenne | Visual Identity
+              </div>
+              <div class="subHeading">Multiple Owners</div>
+            </div>
+            <div class="projectCover-stats">
+              <div class="likes">
+                <i class='bx bxs-like'></i>
+                <span>505</span>
+              </div>
+              <div class="views">
+                <i class='bx bxs-movie'></i>
+                <span>2.3k</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Section -->
+    
+    <footer role="contentinfo" aria-label="primary">
+      <div class="mainFooterContainer">
+        <div class="footerBehanceLinkContainer">
+          <img src="assets/svg/behanceLogo.svg" class="footerLogo" alt="BehanceFooterLogo">
+        </div>
+        <div class="footerSectionContainer">
+          <div class="footerSection">
+            <div class="footerSectionHeader">
+              Built For Creatives
+            </div>
+            <ul>
+              <li class="footerItem">Try Behance Pro</li>
+              <li class="footerItem">Find Inspiration</li>
+              <li class="footerItem">Get Hired</li>
+              <li class="footerItem">Sell Creative Asstes</li>
+              <li class="footerItem">Sell Freelance Services</li>
+            </ul>
+          </div>
+          <div class="footerSection">
+            <div class="footerSectionHeader">
+              Find Talent
+            </div>
+            <ul>
+              <li class="footerItem">Post a Job</li>
+              <li class="footerItem">Graphic Designers</li>
+              <li class="footerItem">Photographers</li>
+              <li class="footerItem">Video Editors</li>
+              <li class="footerItem">Web Designers</li>
+              <li class="footerItem">Illustrators</li>
+            </ul>
+          </div>
+          <div class="footerSection">
+            <div class="footerSectionHeader">
+              Behance
+            </div>
+            <ul>
+              <li class="footerItem">About Behance</li>
+              <li class="footerItem">Adobe Portfolio</li>
+              <li class="footerItem">Download the App</li>
+              <li class="footerItem">Blog</li>
+              <li class="footerItem">Careers</li>
+              <li class="footerItem">Help Center</li>
+              <li class="footerItem">Contact Us</li>
+            </ul>
+          </div>
+          <div class="footerSection">
+            <div class="footerSectionHeader">
+              Social
+            </div>
+            <ul>
+              <li class="footerItem"><i class='bx bxl-instagram'></i> Instagram</li>
+              <li class="footerItem"><i class='bx bxl-twitter' ></i> Twitter</li>
+              <li class="footerItem"><i class='bx bxl-pinterest' ></i> Pinterest</li>
+              <li class="footerItem"><i class='bx bxl-facebook-circle' ></i> Facebook</li>
+              <li class="footerItem"><i class='bx bxl-linkedin-square' ></i> LinkedIn</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <hr class="StaticFooter-divider">
+      <section class="bottomFooter flex-between flex-wrap">
+        <ul class="bottomFooter-adobeInfo flex-center">
+          <li >
+            <img id="adobeLogo"src="/assets/svg/adobeLogo.svg" alt="Adobe Logo">
+          </li>
+          <li>2024 Adobe Inc. All rights reserved.</li>
+        </ul>
+        <div>
+          <ul class="moreFooterLinks flex-wrap">
+            <li>English</li>
+            <li>TOU</li>
+            <li>Privacy</li>
+            <li>community</li>
+            <li>Cookie preferences</li>
+            <li>Do not sell or share my personal information</li>
+          </ul>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>
